@@ -30,7 +30,7 @@ interface Props extends Omit<ButtonProps, "color" | "variant"> {
 }
 
 // eslint-disable-next-line react/display-name
-const MDButton: FC<Props> = forwardRef(
+const MDButton = forwardRef<HTMLButtonElement, Props>(
   (
     {
       color = "white",

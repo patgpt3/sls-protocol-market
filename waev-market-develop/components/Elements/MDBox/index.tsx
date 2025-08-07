@@ -17,7 +17,7 @@ interface Props extends BoxProps {
 }
 
 // eslint-disable-next-line react/display-name
-const MDBox: FC<Props> = forwardRef(
+const MDBox = forwardRef<HTMLDivElement, Props>(
   (
     {
       variant = 'contained',

@@ -223,7 +223,7 @@ export function QuickInfoActionCard({
               variant="text"
               color="info"
               disabled={isDisabled}
-              onClick={(e) => (onClick ? onClick(e) : undefined)}
+              onClick={(e: React.MouseEvent) => (onClick ? onClick(e) : undefined)}
             >
               {linkLabel}
             </MDButton>

@@ -193,7 +193,7 @@ export function DataInfoActionCard({
         boxShadow: sm,
         ...sx,
       }}
-      onClick={(e) => !isDisabled && onClick && onClick(e)}
+      onClick={(e: React.MouseEvent) => !isDisabled && onClick && onClick(e)}
     >
       <MDBox mr={2} sx={{ pl: 1 }}>
         {typeof image === "string" ? (
