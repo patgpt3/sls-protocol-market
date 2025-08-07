@@ -1,9 +1,6 @@
 {
   "version": 2,
   "name": "sls-protocol-market",
-  "buildCommand": "cd waev-market-develop && npm install && npm run build",
-  "outputDirectory": "waev-market-develop/.next",
-  "installCommand": "cd waev-market-develop && npm install",
-  "devCommand": "cd waev-market-develop && npm run dev",
+  "rootDirectory": "waev-market-develop",
   "framework": "nextjs"
 }
