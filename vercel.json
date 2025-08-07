@@ -1,21 +1,9 @@
 {
   "version": 2,
   "name": "sls-protocol-market",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/_next/static/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ]
+  "buildCommand": "cd waev-market-develop && npm install && npm run build",
+  "outputDirectory": "waev-market-develop/.next",
+  "installCommand": "cd waev-market-develop && npm install",
+  "devCommand": "cd waev-market-develop && npm run dev",
+  "framework": "nextjs"
 }
