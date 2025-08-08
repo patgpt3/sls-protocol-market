@@ -133,50 +133,12 @@ export default function Header() {
                 }}
               >
                 <MDTypography sx={{ whiteSpace: "pre", fontSize: "1.10rem" }}>
-                  {" Marketplace "}
+                  {" SLS Marketplace "}
                 </MDTypography>
               </Box>
             </Box>
-            {/* <Box
-              id="WaevLogoBasicLoading"
-              sx={{
-                opacity: 0,
-                transition: "opacity 500ms",
-                position: "absolute",
-                cursor: "pointer",
-                zIndex: 50,
-                ">svg": {
-                  animation: `${fadeInFwdKeyframes()} 1s ease-in both`,
-                },
-              }}
-            >
-              <WaevLogoBasicLoading width={"75%"} height={"60%"} />
-            </Box> */}
           </Box>
         </Link>
-        <Card
-          sx={{
-            height: "fit-content",
-            borderRadius: "0.5rem",
-            opacity: 0.9,
-            ml: 13,
-            bottom: 8,
-            position: "absolute",
-            animation: `${fadeInFwdKeyframes()} 1s ease-in both`,
-          }}
-        >
-          <MDTypography
-            sx={{
-              // whiteSpace: "pre",
-              px: "5px",
-              color: "#1a2035",
-              fontSize: "0.85rem",
-              fontWeight: "600",
-            }}
-          >
-            {"Beta"}
-          </MDTypography>
-        </Card>
       </Box>
       <Box display="flex" alignItems="center">
         <ConnectWalletBtn />
