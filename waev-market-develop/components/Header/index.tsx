@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { WaevLogoBasic, WaevLogoBasicLoading } from "@/components/Logos";
+import { SlsLogo } from "@/components/Logos/SlsLogo";
 import Box from "@mui/material/Box";
 import { fadeInFwdKeyframes } from "@/utils";
 import { ConnectWalletBtn } from "@/components/Buttons";
@@ -103,13 +103,13 @@ export default function Header() {
               position: "relative",
               paddingBottom: 5,
               "&:hover": {
-                ">#WaevLogoBasic": { opacity: 1 },
+                ">#SlsLogo": { opacity: 1 },
                 // ">#WaevLogoBasicLoading": { opacity: 1 },
               },
             }}
           >
             <Box
-              id="WaevLogoBasic"
+              id="SlsLogo"
               sx={{
                 opacity: 1,
                 transition: "opacity 500ms",
@@ -120,7 +120,7 @@ export default function Header() {
                 },
               }}
             >
-              <WaevLogoBasic width={"100%"} height={"60%"} />
+              <SlsLogo width={"100%"} height={"60%"} />
               <Box
                 sx={{
                   display: "flex",
