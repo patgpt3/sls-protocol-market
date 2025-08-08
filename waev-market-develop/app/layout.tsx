@@ -13,7 +13,10 @@ import { Alerts } from "@/components/Modals/Alerts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Beacon Marketplace",
+  title: "SLS Marketplace",
+  icons: [
+    { rel: 'icon', url: '/favicon.svg' },
+  ],
 };
 
 export default function RootLayout({
